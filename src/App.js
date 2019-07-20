@@ -13,9 +13,8 @@ export default class App extends Component {
     }
   }
 
-
   componentDidMount() {
-    const api_url = this.state
+    const { api_url } = this.state
 
     fetch(api_url, {
       method: 'GET',
